@@ -15,6 +15,13 @@ function animate(){
         elem.update();
     });            
 
+    // ctx5.clearRect(0,0,canvas5.width, canvas5.height);
+    ctx5.fillStyle = 'rgba(255,255,255,0.05)';
+    ctx5.fillRect(0,0,canvas5.width, canvas5.height);
+    circuloArray5.forEach(function(elem){
+        elem.update();
+    });            
+
     requestAnimationFrame(animate);
 }
 animate();
